@@ -1,0 +1,17 @@
+.verse {
+  display: flex;
+  font-family: "Iceberg", serif;
+  width: 100%;
+  font-size: 0.8rem;
+  line-height: 0.5rem;
+  padding: 30px 50px;
+  background-color: rgb(20, 20, 41);
+  margin: 20px 0;
+  border-radius: 2rem;
+  box-shadow: -10px 10px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.verse p {
+  font-size: medium;
+  font-style: oblique;
+}

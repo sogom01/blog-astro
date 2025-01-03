@@ -1,0 +1,84 @@
+---
+import HeaderBand from "../components/HeaderBand.astro";
+import Verse from "../components/Verse.astro";
+import Content from "../layouts/Content.astro";
+import Footer from "../layouts/Footer.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+import "../styles/about.css";
+
+const description = "Información del blog";
+---
+
+<MainLayout tittle="Sobre el blog">
+  <HeaderBand description="Historia del blog" />
+  <Content>
+    <h2>Mi historia</h2>
+    <p>
+      Todo se remonta al año 98 en la ciudad de Salamina Caldas, allí empezó
+      todo, nací en una familia qué me lleno de amor y de alegría, mis pasiones
+      han sido muchas, desde pequeño he desarrollado gustos por Dios y las cosas
+      espirituales, la música, el deporte y la tecnología, después de haber
+      tenido una infancia y adolescencia relativamente tranquila por haber
+      vivido en un pueblo tranquilo y alejado de las malas costumbres de las
+      grandes ciudades.
+      <br />
+      <br />
+      El paso del tiempo no solo me enseño muchas más cosas, qué tal vez la educación
+      limitada de un pueblo no me podría ofrecer, sino qué también al haberme mudado
+      a Manizales en búsqueda de mejores oportunidades influyó en mis gustos y decisiones
+      qué más adelante llevarías a tomar decisiones equivocadas y qué después de
+      un tiempo llegaría a entender qué era necesario vivirlo para así llevar mi
+      vida a otro nivel.
+      <br />
+      <br />
+      Hace ya más de 6 años en un evento familiar que se celebraba por estas fechas
+      navideñas me encontraba en un centro recreativo, allí conocí una gran persona
+      que con el tiempo me llevaría a conocer de Dios, podía ver en ella algo especial
+      que no veía en nadie más y me preguntaba que sería eso tan especial que ella
+      tenía que me cautivaba, fue con el pasar de los años que me di cuenta de que
+      eso especial que notaba en su vida y si comportamiento era gracias a que tenía
+      de Dios en su corazón y así fue que Dios logro atraerme nuevamente a él con
+      sus brazos de amor, ya que por ese entonces estaba atravesando una dirá situación
+      personal.
+      <br />
+      <br />
+      No fue esa la única vez que él me sacó del pozo en el que andaba, en este tiempo
+      he tenido muchos encuentros personales con Dios y ha sido él mostrándose a
+      mi vida de muchas formas y es por eso que ahora lo tengo primero en mi vida,
+      porque entendí con el tiempo que si ponemos a Dios primero en nuestras vidas
+      antes que nada, él siempre nos tendrá en honra y levantará nuestra cabeza en
+      esos momentos difíciles.
+    </p>
+
+    <Verse
+      verse="( Oseas 11:4-6 NVI )"
+      passage="Lo atraje con cuerdas de ternura, lo atraje con lazos de amor. Le quité de la cerviz el yugo y con cariño me acerqué para alimentarlo. »No volverá a tierra de Egipto y Asiria reinará sobre ellos, porque no quisieron volverse a mí. En sus ciudades se blandirán espadas, que destrozarán los barrotes de sus puertas y acabarán con sus planes."
+    />
+
+    <h2>Objetivo</h2>
+    <p>
+      El propósito de este espacio es ayudar a las personas a tener una conexión
+      con el Padre Dios. Que cada reflexión sea útil y nos motive a buscar cada
+      día Su palabra. También es un reto personal, ya que lo hago con el mismo
+      propósito de dedicar, cada día, un espacio para acercar mi oído a Su
+      mensaje. Es importante que destinemos tiempo diariamente, no solo para
+      escuchar Su palabra, sino también para agradecer por todo lo que nos da.
+      Cada día es una bendición, y el hecho de que Él nos permita disfrutarla es
+      motivo suficiente para darle gracias.
+      <br />
+      <br />
+      Agradezco a Dios por los dones y talentos que me ha dado. Esta es una forma
+      de ponerlos a Su servicio, buscando llevar Su mensaje a nuevas personas. Además,
+      es una oportunidad para esforzarme cada día en practicar esos talentos y dones,
+      y también para mantener mi comunión espiritual con Él.
+      <br />
+    </p>
+    <Verse
+      verse="( Proverbios 3:5-6 NVI )"
+      passage="Confía en el Señor de todo corazón y no te apoyes en tu propia inteligencia. Reconócelo en todos tus caminos y él enderezará tus sendas."
+    />
+    <br />
+  </Content>
+  <Footer />
+</MainLayout>

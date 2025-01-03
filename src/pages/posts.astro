@@ -1,0 +1,19 @@
+---
+import HeaderBand from "../components/HeaderBand.astro";
+import Content from "../layouts/Content.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/posts.css";
+
+const description = "Devocionales diarios";
+---
+
+<MainLayout tittle={description}>
+  <HeaderBand description={description} />
+  <div class="posts">
+    <div class="post">Post1</div>
+    <div class="post">Post2</div>
+    <div class="post">Post3</div>
+    <div class="post">Post4</div>
+    <div class="post">Post5</div>
+  </div>
+</MainLayout>

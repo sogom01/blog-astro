@@ -1,0 +1,12 @@
+---
+import "../styles/verse.css";
+const { verse, passage } = Astro.props;
+---
+
+<div class="verse">
+  <p>
+    {verse}
+    <br />
+    <span>{passage} </span>
+  </p>
+</div>

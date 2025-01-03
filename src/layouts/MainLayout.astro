@@ -1,0 +1,22 @@
+---
+import NavBar from "../components/Navbar.astro";
+import Footer from "./Footer.astro";
+
+import "../styles/global.css";
+
+const { tittle } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{tittle}</title>
+  </head>
+  <NavBar />
+  <slot />
+  <!-- <Footer /> -->
+
+
+</html>

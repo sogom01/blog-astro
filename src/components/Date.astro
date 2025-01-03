@@ -1,0 +1,18 @@
+---
+const date = new Date().toLocaleDateString("eS-ES", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
+---
+
+<div>
+  <p>Publicado el <time datetime={date}>{date}</time></p>
+  <style>
+    p {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</div>

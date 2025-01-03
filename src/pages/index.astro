@@ -1,11 +1,47 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import HeaderBand from "../components/HeaderBand.astro";
+import Verse from "../components/Verse.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import Content from "../layouts/Content.astro";
+import Footer from "../layouts/Footer.astro";
+import Date from "../components/Date.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+//Aca ponemos las variables que queremos mostrar en la pagina
+const tittleDevotional = "El amor de Dios";
+const verse = "( Oseas 11:4-6 NVI )";
+const passage =
+  "Lo atraje con cuerdas de ternura, lo atraje con lazos de amor. Le quité de la cerviz el yugo y con cariño me acerqué para alimentarlo. »No volverá a tierra de Egipto y Asiria reinará sobre ellos, porque no quisieron volverse a mí. En sus ciudades se blandirán espadas, que destrozarán los barrotes de sus puertas y acabarán con sus planes.";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout tittle="Capsulas Devocionales">
+  <HeaderBand description={tittleDevotional} />
+  <Content>
+    <Verse verse={verse} passage={passage} />
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore culpa
+      atque rerum accusantium? Libero cum magnam nulla inventore. Fugit libero
+      consequatur eligendi laudantium pariatur accusantium distinctio minima ut
+      quibusdam cumque. Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Inventore culpa atque rerum accusantium? Libero cum magnam nulla
+      inventore. Fugit libero consequatur eligendi laudantium pariatur
+      accusantium distinctio minima ut quibusdam cumque. Lorem ipsum dolor sit
+      amet consectetur, adipisicing elit. Inventore culpa atque rerum
+      accusantium? Libero cum magnam nulla inventore. Fugit libero consequatur
+      eligendi laudantium pariatur accusantium distinctio minima ut quibusdam
+      cumque.
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, optio? Obcaecati,
+      laboriosam. Maiores, fugiat recusandae. Cum, similique a, magni perferendis
+      error odit mollitia sunt quas, iure repellat corrupti fuga aspernatur. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Eum, optio? Obcaecati, laboriosam.
+      Maiores, fugiat recusandae. Cum, similique a, magni perferendis error odit
+      mollitia sunt quas, iure repellat corrupti fuga aspernatur. Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Eum, optio? Obcaecati, laboriosam. Maiores,
+      fugiat recusandae. Cum, similique a, magni perferendis error odit mollitia
+      sunt quas, iure repellat corrupti fuga aspernatur.
+    </p>
+  </Content>
+  <Date />
+  <Footer />
+</MainLayout>
