@@ -1,7 +1,7 @@
 main {
+  display: flex;
   margin: 0 auto;
   max-width: 1000px;
-  height: fit-content;
   padding: 0 50px;
 }
 
