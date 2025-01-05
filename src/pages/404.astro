@@ -2,9 +2,11 @@
 import MainLayout from "../layouts/MainLayout.astro";
 
 import "../styles/404.css";
+
+const description = "404 not found";
 ---
 
-<MainLayout>
+<MainLayout tittle={description}>
   <div class="central-body">
     <img
       class="image-404"
