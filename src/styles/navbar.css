@@ -1,6 +1,6 @@
 nav {
   position: sticky;
-  top: 0;
+  top: 50px;
   z-index: 100;
   background-color: rgb(37, 37, 41);
   width: 100%;
